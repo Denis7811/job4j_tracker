@@ -33,8 +33,8 @@ public class PointTest {
 
     @Test
     public void when001to000hen1() {
-        Point a = new Point(0,0,1);
-        Point b = new Point(0,0,0);
+        Point a = new Point(0, 0, 1);
+        Point b = new Point(0, 0, 0);
         double dist3D = a.distance3D(b);
         Assert.assertEquals(dist3D, 1, 0.01);
     }
