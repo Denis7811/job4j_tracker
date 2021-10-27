@@ -19,34 +19,19 @@ public class Triangle {
     }
 
     public boolean exist(double ab, double ac, double bc) {
-        if (ab + ac > bc && ab + bc > ac && ac + bc > ab) {
-            return true;
-        } else {
-            return false;
-        }
+        return ab + ac > bc && ab + bc > ac && ac + bc > ab;
     }
 
     public double area() {
-        double area = 0;
+        double area = -1;
         double ab = first.distance(second);
         double ac = first.distance(third);
         double bc = second.distance(third);
                 if (this.exist(ab, ac, bc)) {
                     double p = semiPerimeter(ab, ac, bc);
                     area = sqrt(p * (p - ab) * (p - ac) * (p - bc));
-                } else {
-                    System.out.println("Ошибка! Треугольник не существует!");
                 }
             return area;
         }
-
-    public static void main(String[] args) {
-        Point a = new Point(0, 0);
-        Point b = new Point(0, 0);
-        Point c = new Point(0, 0);
-        Triangle triangle = new Triangle(a, b, c);
-        double rsl = triangle.area();
-        System.out.println(rsl);
-    }
 }
 
