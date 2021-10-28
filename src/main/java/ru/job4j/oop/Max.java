@@ -6,9 +6,11 @@ public class Max {
         return result;
     }
 
+    public static int max(int left, int right, int third) {
+        return max(max(left, right), third);
+    }
+
     public static int max(int left, int right, int third, int fourth) {
-        int result = max(left, right);
-        int result1 = max(result, third);
-        return max(result1, fourth);
+       return max(max(left, right), max(third, fourth));
     }
 }
