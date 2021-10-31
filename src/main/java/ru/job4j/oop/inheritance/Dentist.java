@@ -8,7 +8,7 @@ public class Dentist  extends Doctor {
         this.drill = drill;
     }
 
-    public void Drillname(String drill) {
+    public void drillName(String drill) {
 
     }
 }
