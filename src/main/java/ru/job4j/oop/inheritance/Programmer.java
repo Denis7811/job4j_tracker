@@ -4,7 +4,8 @@ public class Programmer extends Engineer {
 
     private String monitor;
 
-    public Programmer(String monitor) {
+    public Programmer(String country, String monitor) {
+        super(country);
         this.monitor = monitor;
     }
 

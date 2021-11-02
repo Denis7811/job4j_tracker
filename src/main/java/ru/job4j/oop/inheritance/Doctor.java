@@ -4,6 +4,10 @@ public class Doctor extends Profession {
     private String university;
 
     public Doctor(String university) {
+    }
+
+    public Doctor(String name, String university) {
+        super(name);
         this.university = university;
     }
 
