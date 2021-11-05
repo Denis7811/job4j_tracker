@@ -11,6 +11,10 @@ public class Jukebox {
                     }
         }
 
+    public void book(int page, String author) {
+        System.out.println(page + author);
+    }
+
     public static void main(String[] args) {
         Jukebox petya = new Jukebox();
         int number1 = 1;
@@ -19,6 +23,9 @@ public class Jukebox {
         petya.music(number1);
         petya.music(number2);
         petya.music(number3);
-
+        Jukebox denis = new Jukebox();
+        int page1 = 10000;
+        String author1 = "Чехов";
+        denis.book(page1, author1);
     }
 }
