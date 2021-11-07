@@ -12,7 +12,7 @@ public class Calculator {
 
     public static void main(String[] args) {
         Calculator a = new Calculator();
-                double dist = a.add(4,5);
+                double dist = a.add(4, 5);
         System.out.println(dist);
     }
 }
