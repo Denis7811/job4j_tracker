@@ -16,14 +16,14 @@ public class Library {
         for (Book book : library) {
             System.out.println(book.getNameBook() + " - " + book.getCountBook());
         }
-        System.out.println("");
+        System.out.println(" ");
         Book temp = library[0];
         library[0] = library[3];
         library[3] = temp;
         for (Book book : library) {
             System.out.println(book.getNameBook() + " - " + book.getCountBook());
         }
-        System.out.println("");
+        System.out.println(" ");
         for (int index = 0; index < library.length; index++) {
             Book book = library[index];
             if (Objects.equals(book.getNameBook(), "Clean code")) {
