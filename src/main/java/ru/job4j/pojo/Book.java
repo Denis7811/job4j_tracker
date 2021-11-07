@@ -2,7 +2,7 @@ package ru.job4j.pojo;
 
 public class Book {
     private String nameBook;
-    private int countBook;
+    private int countBBook;
 
     public Book(String nameBook, int countBook) {
         this.nameBook = nameBook;
