@@ -8,24 +8,28 @@ public class Library {
         Book book1 = new Book("Java", 3);
         Book book2 = new Book("3 мушкетера", 1);
         Book book3 = new Book("Думай медленно", 4);
-        Book[] library = new Book[4];
-        library[0] = book0;
-        library[1] = book1;
-        library[2] = book2;
-        library[3] = book3;
-        for (Book book : library) {
+        Book[] libraryArray = new Book[4];
+        libraryArray[0] = book0;
+        libraryArray[1] = book1;
+        libraryArray[2] = book2;
+        libraryArray[3] = book3;
+        for (Book book : libraryArray) {
             System.out.println(book.getNameBook() + " - " + book.getCountBook());
         }
         System.out.println(" ");
-        Book temp = library[0];
-        library[0] = library[3];
-        library[3] = temp;
-        for (Book book : library) {
+        Book temp = libraryArray[0];
+        libraryArray[0] = libraryArray[3];
+        libraryArray[3] = temp;
+        for (Book book : libraryArray) {
             System.out.println(book.getNameBook() + " - " + book.getCountBook());
         }
         System.out.println(" ");
-        for (int index = 0; index < library.length; index++) {
-            Book book = library[index];
+        for (int index = 0; index < libraryArray.length; index++) {
+            Book book = libraryArray[index];
+            System.out.println(book.getNameBook());
+        }
+        for (int index = 0; index < libraryArray.length; index++) {
+            Book book = libraryArray[index];
             if (Objects.equals(book.getNameBook(), "Clean code")) {
                 System.out.println(book.getNameBook() + " - " + book.getCountBook());
             }
