@@ -33,7 +33,7 @@ class JavaNameValidatorTest {
 
     @Test
     void whenNumberInValid() {
-        assertThat(isNameValid("123")).isFalse();
+        assertThat(isNameValid("1243")).isFalse();
     }
 
     @Test
