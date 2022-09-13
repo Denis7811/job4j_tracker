@@ -28,9 +28,4 @@ public class JavaNameValidator {
     public static boolean isLowerLatinLetter(int code) {
         return (code > 97 && code < 122);
     }
-
-   /* public static void main(String[] args) {
-        JavaNameValidator j = new JavaNameValidator();
-        System.out.println(j.isLowerLatinLetter(98));
-    }*/
 }
