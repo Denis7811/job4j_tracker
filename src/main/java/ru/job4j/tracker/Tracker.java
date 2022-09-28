@@ -60,18 +60,12 @@ public class Tracker {
 
     public boolean replace(int id, Item item) {
         int index = indexOf(id);
-        if (index == -1) {
-            return false;
-        } else {
-            for (int i = 0; i < items.length; i++) {
-                if (i == index) {
-                    items[i] = item;
-                    item.setId(id);
-                    break;
-                }
-            }
+        boolean rsl = index != 1;
+        if (rsl) {
+            item.setId(id);
+            items[index] = item;
         }
-        return true;
+        return rsl;
     }
 
     public static void main(String[] args) {
