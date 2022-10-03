@@ -11,5 +11,7 @@ public class StartUI {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
         String date = current.format(formatter);
         System.out.println(date);
+        Item first = new Item(10, "First");
+        System.out.println(first);
     }
 }
