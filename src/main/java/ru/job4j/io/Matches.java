@@ -17,7 +17,6 @@ public class Matches {
                 turn = !turn;
             } else {
                 System.out.println("ОШИБКА!");
-                break;
             }
         }
         if (!turn) {
