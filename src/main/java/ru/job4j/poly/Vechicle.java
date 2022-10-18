@@ -1,4 +1,4 @@
-package ru.job4j.oop.poly;
+package ru.job4j.poly;
 
 public interface Vechicle {
     void move();
