@@ -60,7 +60,6 @@ public class StartUI {
     public static void editItem(Input input, Tracker tracker) {
         System.out.println("=== Edit item ===");
         int id = input.askInt("Enter id: ");
-        System.out.print("Enter name: ");
         String name = input.askStr("Enter name: ");
         Item item = new Item(name);
         if (tracker.replace(id, item)) {
@@ -70,14 +69,15 @@ public class StartUI {
         }
     }
 
-        public static void deleteItem(Input input, Tracker tracker) {
-            int id = input.askInt("Enter id: ");
-            if (tracker.delete(id)) {
-                System.out.println("Заявка удалена успешно.");
-            } else {
-                System.out.println("Ошибка удаления заявки.");
-            }
+    public static void deleteItem(Input input, Tracker tracker) {
+        System.out.println("=== Delete item ===");
+        int id = input.askInt("Enter id: ");
+        if (tracker.delete(id)) {
+            System.out.println("Заявка удалена успешно.");
+        } else {
+            System.out.println("Ошибка удаления заявки.");
         }
+    }
 
     public static void findById(Input input, Tracker tracker) {
         System.out.println("=== Find item by id ===");
