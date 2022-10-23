@@ -107,5 +107,8 @@ public class StartUI {
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         new StartUI().init(input, tracker);
+        /*String[] answers = {"Fix PC"};
+        Input input1 = new StubInput(answers);
+        System.out.println(input1);*/
     }
 }
