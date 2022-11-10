@@ -15,4 +15,10 @@ public class ConsoleInput  implements Input {
     public int askInt(String question) {
         return Integer.parseInt(askStr(question));
     }
+
+    public static void main(String[] args) {
+        Tracker tracker = new Tracker();
+        Item item = new Item("new item");
+        tracker.add(item);
+    }
 }

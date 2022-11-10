@@ -8,4 +8,9 @@ public class Triangle  implements Shape {
                 + " /   \\ " + ln
                 + "/_____\\" + ln;
     }
+
+    public static void main(String[] args) {
+        Shape t = new Triangle();
+        System.out.println(t.draw());
+    }
 }
