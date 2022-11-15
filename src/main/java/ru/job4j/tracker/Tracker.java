@@ -13,18 +13,6 @@ public class Tracker {
         return item;
     }
 
-    public Item findByIdOld1(int id) {
-        Item rsl = null;
-        for (int index = 0; index < size; index++) {
-            Item item = items[index];
-            if (item.getId() == id) {
-                rsl = item;
-                break;
-            }
-        }
-        return rsl;
-    }
-
     public Item findById(int id) {
         int index = indexOf(id);
         return index != -1 ? items[index] : null;
