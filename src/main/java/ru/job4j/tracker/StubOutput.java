@@ -19,15 +19,17 @@ public class StubOutput implements Output {
     }
 
     public static void main(String[] args) {
-        Output out1 = new StubOutput();
+        Output out = new StubOutput();
+        Tracker tracker = new Tracker();
+        Item one = tracker.add(new Item("test1"));
+        String replaceName = "New Test Name";
         Input in = new StubInput(
-                new String[] {"0"}
+                new String[] {"0", String.valueOf(one.getId()), replaceName, "1"}
         );
-        Tracker tracker1 = new Tracker();
-        UserAction[] actions1 = {
+        UserAction[] actions = new UserAction[]{
+                new EditItem(out),
                 new ExitProgram()
         };
-        new StartUI(out1).init(in, tracker1, actions1);
-        out1.toString();
+        new StartUI(out).init(in, tracker, actions);
     }
 }
