@@ -98,7 +98,7 @@ class PasswordValidatorTest {
                 IllegalArgumentException.class,
                 () -> PasswordValidator.validate(password)
         );
-        String expected = "Password shouldn't contain substrings: "
+        String expected = "Password shouldn't contain substrings:"
                 +
                 " qwerty, 12345, password, admin, user";
         assertThat(exception.getMessage()).isEqualTo(expected);
