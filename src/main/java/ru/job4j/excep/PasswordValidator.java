@@ -30,6 +30,8 @@ public class PasswordValidator {
         }
         if (!Character.isUpperCase(x) && !Character.isLowerCase(x) && !Character.isDigit(x)) {
             figure = true;
+        }
+        if (upper && lower && digit && figure) {
             break;
         }
     }
