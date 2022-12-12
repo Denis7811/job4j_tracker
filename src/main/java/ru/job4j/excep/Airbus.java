@@ -1,7 +1,7 @@
 package ru.job4j.excep;
 
 public final class Airbus extends Aircraft {
-   private static int count_engine = 2;
+   private static int countEngine = 2;
 
     private String name;
 
@@ -23,8 +23,8 @@ public final class Airbus extends Aircraft {
     }
 
     public void printCountEngine() {
-        count_engine = name.equals("A380") ? 4 : 2;
-        System.out.println("Количество двигателей равно: " + count_engine);
+        countEngine = name.equals("A380") ? 4 : 2;
+        System.out.println("Количество двигателей равно: " + countEngine);
     }
 
     @Override
