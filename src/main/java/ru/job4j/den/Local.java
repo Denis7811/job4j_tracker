@@ -16,8 +16,8 @@ public class Local {
 
             FullName fullName = new FullName();
             fullName.printFullName();
-        }
 
+        }
 
         public static void main(String[] args) {
             Local local = new Local();
