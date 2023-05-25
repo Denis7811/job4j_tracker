@@ -8,7 +8,7 @@ public class UsageArrayList {
         names.add("Petr");
         names.add("Deni");
         names.add("Alex");
-        for (Object value : names) {
+        for (String value : names) {
             System.out.print(value + " ");
         }
     }
