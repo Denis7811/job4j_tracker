@@ -13,7 +13,7 @@ class AppleStoreTest {
     @Test
     void whenGetLast() {
         Queue<Customer> customers = new LinkedList<>();
-        customers.add(new Customer("Petr", 1000));
+        customers.add(new Customer("Pet r", 1000));
         customers.add(new Customer("Stas", 1500));
         customers.add(new Customer("Andrey", 850));
         customers.add(new Customer("Alexei", 900));
