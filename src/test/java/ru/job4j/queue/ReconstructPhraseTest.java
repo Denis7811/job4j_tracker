@@ -17,7 +17,7 @@ class ReconstructPhraseTest {
     void whenSloganOfLanguageJava() {
         Deque<Character> evenElements = new LinkedList<>(
                 Arrays.asList(
-                        'S', '2', 'l', '3', 'o', 'h', 'g', 'h', 'a', 'm', 'n', 't',
+                        'S', '1', 'l', '3', 'o', 'h', 'g', 'h', 'a', 'm', 'n', 't',
                         ' ', 't', 'o', ' ', 'f', 'q', ' ', '6', 'l', '.', 'a', ',',
                         'n', 'w', 'g', 'd', 'u', 'a', 'a', 'u', 'g', 'd', 'e', 'q',
                         ' ', 'y', 'J', 'd', 'a', 'k', 'v', 'p', 'a', 'e', ':', 'b'
