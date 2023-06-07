@@ -29,14 +29,27 @@ public class ReconstructPhrase {
 
     private String getDescendingElements() {
         Iterator<Character> iterator = descendingElements.descendingIterator();
+        int size = descendingElements.size();
         StringBuilder str = new StringBuilder();
-        while (iterator.hasNext()) {
-            str.append(iterator.next());
+        for (int i = 0; i < size; i++) {
+            Character character = descendingElements.pollLast();
+            str.append(character);
         }
         return str.toString();
     }
 
     public String getReconstructPhrase() {
         return getEvenElements() + getDescendingElements();
+    }
+
+    public static void main(String[] args) {
+        Deque<Character> evenElements = new LinkedList<>();
+        evenElements.add('D');
+        evenElements.add('e');
+        evenElements.add('n');
+        evenElements.add('a');
+        for (Character str : evenElements) {
+            System.out.println(str);
+        }
     }
 }
