@@ -28,7 +28,6 @@ public class ReconstructPhrase {
     }
 
     private String getDescendingElements() {
-        Iterator<Character> iterator = descendingElements.descendingIterator();
         int size = descendingElements.size();
         StringBuilder str = new StringBuilder();
         for (int i = 0; i < size; i++) {
