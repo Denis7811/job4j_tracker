@@ -40,15 +40,4 @@ public class ReconstructPhrase {
     public String getReconstructPhrase() {
         return getEvenElements() + getDescendingElements();
     }
-
-    public static void main(String[] args) {
-        Deque<Character> evenElements = new LinkedList<>();
-        evenElements.add('D');
-        evenElements.add('e');
-        evenElements.add('n');
-        evenElements.add('a');
-        for (Character str : evenElements) {
-            System.out.println(str);
-        }
-    }
 }
