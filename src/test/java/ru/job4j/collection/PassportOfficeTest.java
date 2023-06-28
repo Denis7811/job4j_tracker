@@ -15,7 +15,7 @@ class PassportOfficeTest {
     }
 
     @Test
-    public void whenDubkePassport() {
+    public void whenDublePassport() {
         Citizen citizen1 = new Citizen("2f44a", "Petr Arsentev");
         Citizen citizen2 = new Citizen("2f44a", "Petr Arsentev");
         PassportOffice office = new PassportOffice();
