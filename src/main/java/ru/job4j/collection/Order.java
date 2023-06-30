@@ -18,8 +18,8 @@ public class Order {
     @Override
     public String toString() {
         return "Order{"
-                + "number='" + number + '\''
-                + ", name='" + name + '\''
+                + "number ='" + number + '\''
+                + ", name ='" + name + '\''
                 + '}';
     }
 
