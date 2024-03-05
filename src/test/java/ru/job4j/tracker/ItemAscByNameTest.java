@@ -5,20 +5,21 @@ import java.util.Arrays;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class ItemDescByNameTest {
+class ItemAscByNameTest {
     @Test
-    public void whenListSortDown() {
+    public void whenListSortUp() {
         List<Item> items = Arrays.asList(
                 new Item("Xmen"),
                 new Item("Azbuka"),
                 new Item("Bazuka")
         );
-        items.sort(new ItemDescByName());
+        items.sort(new ItemAscByName());
         List<Item> expected = Arrays.asList(
-                new Item("Xmen"),
+                new Item("Azbuka"),
                 new Item("Bazuka"),
-                new Item("Azbuka")
+                new Item("Xmen")
         );
         assertThat(items).isEqualTo(expected);
+
     }
 }

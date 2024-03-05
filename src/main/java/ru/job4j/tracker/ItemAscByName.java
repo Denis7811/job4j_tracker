@@ -12,19 +12,7 @@ public class ItemAscByName implements Comparator<Item> {
     }
 
     public static void main(String[] args) {
-        List<Item> items = Arrays.asList(
-                new Item("Xmen"),
-                new Item("Azbuka"),
-                new Item("Bazuka")
-        );
-        items.sort(new ItemAscByName());
-        List<Item> expected = Arrays.asList(
-                new Item("Azbuka"),
-                new Item("Bazuka"),
-                new Item("Xmen")
-        );
-        boolean isEqual = items.equals(expected);
-        System.out.println(isEqual);
+        System.out.println("!");
     }
 }
 
