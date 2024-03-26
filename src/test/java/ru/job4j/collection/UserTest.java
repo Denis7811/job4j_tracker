@@ -53,9 +53,9 @@ class UserTest {
 
     @Test
     public void whenComparePetrVSPetrWithDifferentAge() {
-        int result = new User("Petr", 31)
+        int result = new User("Pet", 31)
                 .compareTo(
-                        new User("Petr", 32)
+                        new User("Pet", 32)
                 );
         assertThat(result).isLessThan(0);
     }
