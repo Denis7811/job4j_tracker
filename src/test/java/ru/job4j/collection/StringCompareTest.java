@@ -8,7 +8,7 @@ class StringCompareTest {
     @Test
     public void whenStringsAreEqualThenZero() {
         StringCompare compare = new StringCompare();
-        int result = compare.compare(
+        int result1 = compare.compare(
                 "Ivanov",
                 "Ivanov"
         );
